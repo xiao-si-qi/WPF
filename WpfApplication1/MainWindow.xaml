@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="把支付宝给妹妹们" Height="521.778" Width="671.409"
+        Icon="ta.png"
+        ResizeMode = "NoResize" FontSize="20">
+    <Grid Margin="10,0,0,-4" Height="472" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="269*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="好的，给你" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Height="72" Click="button_Click" Margin="382,184,0,0" FontSize="20" Grid.Row="1"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Height="26" Margin="92,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" FontSize="15" Grid.Row="1" />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="2,184,0,0" TextWrapping="Wrap" Text="支付宝账户" VerticalAlignment="Top" Height="19" Width="84" TextAlignment="Center" FontSize="15"  Grid.Row="1"  >
+
+        </TextBlock>
+        <Image x:Name="jpg" Source="img.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="355" VerticalAlignment="Top" Grid.RowSpan="2" Margin="-10,0,0,0" HorizontalAlignment="Right" Width="665"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="-2,213,0,0" TextWrapping="Wrap" Text="支付宝密码" VerticalAlignment="Top" Height="22" Width="94" TextAlignment="Center" FontSize="15" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="17,242,0,0" TextWrapping="Wrap" Text="交易密码" VerticalAlignment="Top" Height="22" Width="70" TextAlignment="Center" FontSize="15" Grid.Row="1"/>
+        <TextBox x:Name="userPas" HorizontalAlignment="Left" Height="24" Margin="92,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284" FontSize="15" Grid.Row="1"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="25" Margin="92,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216" FontSize="15" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="130,157,0,0" TextWrapping="Wrap" Text="欧尼酱...可以...告诉我...你的...支付宝吗？" VerticalAlignment="Top" FontSize="20" Height="25" Width="358" Grid.Row="1" />
+        <Button x:Name="button1" Content="残忍拒绝" HorizontalAlignment="Left" Margin="544,226,0,0" VerticalAlignment="Top" Width="86" Click="button1_Click" Grid.Row="1" Height="30"/>
+    </Grid>
+</Window>
