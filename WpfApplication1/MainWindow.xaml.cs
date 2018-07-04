@@ -24,6 +24,7 @@ namespace WpfApplication1
             string strFrom = "xiaosiqi11111@163.com";  //发送方邮件地址
 
 
+
             SmtpClient _smtpClient = new SmtpClient();
             _smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;//指定电子邮件发送方式
             _smtpClient.Host = strHost; ;//指定SMTP服务器
